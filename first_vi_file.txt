@@ -1,0 +1,12 @@
+echo good morning
+
+to exit vi from writing mode: press Esc
+to save your vi file :w
+
+to save your vi file :w
+to save your vi file and quit at the same time :wq
+1
+2
+3
+4
+
