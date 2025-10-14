@@ -1,0 +1,13 @@
+  352  man rm
+  353  cd ..
+  354  ls
+  355  git push origin PFB_pr
+  356  ls
+  357  cd PFB_problemsets
+  359  git push origin main
+  360  git pull origin main
+  361  chmod +x ./.git/hooks/pre-commit
+  363  git status
+  364  git push origin main
+  366  man rm
+  367  man cp
