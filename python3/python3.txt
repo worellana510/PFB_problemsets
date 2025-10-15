@@ -49,4 +49,51 @@ Answer: There are 167 A nucleotides, 187 T nucleotides, 270 C nucleotides and 21
 7. DNA to RNA question
 I know we have a function where we can replace the characters of a string with the replace function. 
  
- 
+9. In order to find the GC content of a sequence of DNA I would have to count all of the G's and all of the C's and then add that together. Then if I want to know what the percentage of this I would need to add using len() to find how many nucleotides that are in total. With this I know the total of GC and total nucleotides so maybe i create a new variable that takes GC #/divides by the output of len. 
+code: #!/usr/bin/env python3
+import sys
+
+DNAseq = sys.argv[1] #import in any argument given
+
+A = DNAseq.count('A')
+T = DNAseq.count('T')
+C = DNAseq.count('C')
+G = DNAseq.count('G')
+
+GC = G + C
+AT = A + T
+
+totalDNA = len(DNAseq)
+
+print(f'The GC content is {GC/totalDNA:.0%}, and the AT content is {AT/totalDNA:.0%}.') 
+
+10. >>> sub_dna = dna[99:200]
+>>> print(sub_dna)
+GCTGGGCTCCGGGGACACTTTGCGTTCGGGCTGGGAGCGTGCTTTCCACGACGGTGACACGCTTCCCTGGATTGGCAGCCAGACTGCCTTCCGGGTCACTG
+>>> 
+
+12. code:
+#!/usr/bin/env python3
+import sys
+
+DNAseq = sys.argv[1] #import in any argument given
+
+DNAsequpper = DNAseq.upper() #Make it all upper case
+
+sub_DNA = DNAsequpper[99:200]
+
+A = sub_DNA.count('A')
+T = sub_DNA.count('T')
+C = sub_DNA.count('C')
+G = sub_DNA.count('G')
+
+GC = G + C
+AT = A + T
+
+totalDNA = len(sub_DNA)
+
+print(f'The GC content is {GC/totalDNA:.0%}, and the AT content is {AT/totalDNA:.0%}.')
+
+13. First i would take my DNA sequence into an argument variable. I then will the replace function to replace the A to T's, T's ot A's and so on. Then I'd do the reverse function to the give me the reverse complement. 
+
+  
