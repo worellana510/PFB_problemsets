@@ -27,4 +27,26 @@ chicken
 chicken
 >>>
 
-5. 
+6. The first two things that come to mind is that I either make my DNA sequence that has a mix of upper and lower case letter into a string that has only upper case letters by converting it using the .upper() function. Another way I'm thinking about it is that i have it count all of the upper case and lower case letter and then add them together. The second methods seems longer to me so i'll first make it all upper case letters and then do the count methods. 
+
+ code:
+#!/usr/bin/env python3
+import sys
+
+DNAseq = sys.argv[1] #import in any argument given
+
+DNAsequpper = DNAseq.upper()
+
+A = DNAsequpper.count('A')
+T = DNAsequpper.count('T')
+C = DNAsequpper.count('C')
+G = DNAsequpper.count('G')
+
+print(f'There are {A} A nucleotides, {T} T nucleotides, {C} C nucleotides and {G} G nucleotides in this DNA sequence')
+
+Answer: There are 167 A nucleotides, 187 T nucleotides, 270 C nucleotides and 218 G nucleotides in this DNA sequence.
+
+7. DNA to RNA question
+I know we have a function where we can replace the characters of a string with the replace function. 
+ 
+ 

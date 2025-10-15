@@ -3,5 +3,7 @@ import sys
 
 DNAtoRNA = sys.argv[1] #import in any argument given
 
-DNAsequpper = DNAseq.upper()
+RNA = DNAtoRNA.replace('T','U')
+
+print(RNA)
 
