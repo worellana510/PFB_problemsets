@@ -23,12 +23,7 @@ with open('Python_06.seq.txt','r') as dnaseq_obj: #open('revpython6test.txt','w'
         rev = sequence[::-1] #This allowed me to reverse the complement.
         list[1] = rev
         print(f'{list[0]}\t{list[1]}')
-        
 
-
-
-# output = open("Pythonseqoutput.txt","w")
-# output.write(rev)
 
 
 
