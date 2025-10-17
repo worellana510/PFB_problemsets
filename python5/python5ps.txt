@@ -1,0 +1,6 @@
+1.
+a. The difference is that with myset = set() and output it you get each unique individual character in the set. While in the myset2 you get the whole string. 
+b. yes it matter in the sense if you're working with a sequence for example yand you may want to count each indiviual nt so the myset = set() would work best instead to myset because that produces a singular element wiht all of your nt's.
+c. myset has 3 and myset2 has only 1. 
+
+
