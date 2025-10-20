@@ -1,0 +1,112 @@
+1. (base) pfb@info19 python4 % python3
+Python 3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:09:21) [Clang 14.0.6 ] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> favorite_things = ['eating','sleeping','cooking','driving','skiing']
+>>> print(favorite_things)
+['eating', 'sleeping', 'cooking', 'driving', 'skiing']
+>>> print(favorite_things,[2])
+['eating', 'sleeping', 'cooking', 'driving', 'skiing'] [2]
+>>> print(favorite_things[2:2])
+[]
+>>> print(favorite_things[0:2])
+['eating', 'sleeping']
+>>> print(favorite_things[2:3])
+['cooking']
+>>> len(favorite_things)
+5
+>>> favorite_things.append(stuff[2:3])
+Traceback (most recent call last):
+  File "<python-input-7>", line 1, in <module>
+    favorite_things.append(stuff[2:3])
+                           ^^^^^
+NameError: name 'stuff' is not defined
+>>> favorite_things.insert(3:stuff)
+  File "<python-input-8>", line 1
+    favorite_things.insert(3:stuff)
+                            ^
+SyntaxError: invalid syntax
+>>> favorite_things.insert(3,stuff)
+Traceback (most recent call last):
+  File "<python-input-9>", line 1, in <module>
+    favorite_things.insert(3,stuff)
+                             ^^^^^
+NameError: name 'stuff' is not defined
+>>> print(favorite_things)
+['eating', 'sleeping', 'cooking', 'driving', 'skiing']
+>>> favorite_things.insert(2,6)
+>>> print(favorite_things)
+['eating', 'sleeping', 6, 'cooking', 'driving', 'skiing']
+>>> favorite_things[2] = 'fishing'
+>>> print(favorite_things)
+['eating', 'sleeping', 'fishing', 'cooking', 'driving', 'skiing']
+>>> clear
+
+>>> favorite_things
+['eating', 'sleeping', 'fishing', 'cooking', 'driving', 'skiing']
+>>> favorite_things = ['eating', 'sleeping', 'cooking', 'driving', 'skiing']
+>>> print(favorite_things)
+['eating', 'sleeping', 'cooking', 'driving', 'skiing']
+>>> favorite_things[2] = 'fishing'
+>>> print(favorite_things)
+['eating', 'sleeping', 'fishing', 'driving', 'skiing']
+>>> favorite_things.append(cooking)
+Traceback (most recent call last):
+  File "<python-input-20>", line 1, in <module>
+    favorite_things.append(cooking)
+                           ^^^^^^^
+NameError: name 'cooking' is not defined
+>>> favorite_things.append('cooking')
+>>> print(favorite_things)
+['eating', 'sleeping', 'fishing', 'driving', 'skiing', 'cooking']
+>>> favorite_things.insert(0,'reading'>>> print(favorite_things)
+['reading', 'eating', 'sleeping', 'fishing', 'driving', 'skiing', 'cooking']
+>>> favorite_things.insert(3:'joggin')
+  File "<python-input-25>", line 1
+    favorite_things.insert(3:'joggin')
+                            ^
+SyntaxError: invalid syntax
+>>> favorite_things.insert(3,'joggin')
+>>> print(favorite_things)
+['reading', 'eating', 'sleeping', 'joggin', 'fishing', 'driving', 'skiing', 'cooking']
+>>> favorite_things.pop(-1)
+'cooking'
+>>> favorite_things.pop(0)
+'reading'
+>>> print(favorite_things)
+['eating', 'sleeping', 'joggin', 'fishing', 'driving', 'skiing']
+>>> favorite_things.remove([2:3])
+  File "<python-input-31>", line 1
+    favorite_things.remove([2:3])
+                             ^
+SyntaxError: invalid syntax
+>>> favorite_things.remove(3)
+Traceback (most recent call last):
+  File "<python-input-32>", line 1, in <module>
+    favorite_things.remove(3)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^
+ValueError: list.remove(x): x not in list
+>>> favorite_things.remove('fishing')
+>>> print(favorite_things)
+['eating', 'sleeping', 'joggin', 'driving', 'skiing']
+>>> joined_favorite_things = ", ".join(favorite_things)
+>>> print(joined_favorite_things)
+eating, sleeping, joggin, driving, skiing
+>>> 
+
+2.
+e. You get the word erectus
+f. taxa_string is a str type.
+taxa_list is a list type.
+g. code used for question 2:
+taxa_string = "sapiens : erectus : neanderthalensis"
+
+print(taxa_string)
+
+taxa_list = taxa_string.split(':')
+print(taxa_list)
+print(taxa_list[1])
+
+taxa_list_sorted = sorted(taxa_list,key=len, reverse=False)
+print(taxa_list_sorted)
+
+3. 
