@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 fastaDict={}
-with open('fasta2.txt','r') as dna_obj:
+with open('fasta.txt','r') as dna_obj:
     for line in dna_obj:
         line = line.rstrip()
         if line.startswith('>'):
