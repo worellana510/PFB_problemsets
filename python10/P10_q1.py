@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+#!/usr/bin/env python3
+
 import sys
 
 #question 1: 
@@ -17,4 +19,6 @@ ntfilter ('GATGGGATTGGGGTTTTCCCCTCCCATGTGCTCAAGACTGGCGCTAAAAGTTTTGAGCTTCTCAAAAGT
 
 #print(f"String is {count} nt's in length.")
     #return filter
+
+
 
